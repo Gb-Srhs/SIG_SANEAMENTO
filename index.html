@@ -55,7 +55,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[-11.082027266872936,-40.81790543467401],[-7.32831342939074,-34.880111075680595]]);
+        }).fitBounds([[-10.382395335110068,-39.67978163350287],[-6.6286814976278725,-33.741987274509455]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -187,9 +187,14 @@
             if (feature.properties['PER_Agua'] >= 0.000000 && feature.properties['PER_Agua'] <= 0.300000 ) {
                 return {
                 pane: 'pane_PercentualdeDomicilioscomgua_2',
-                stroke: false, 
+                opacity: 1,
+                color: 'rgba(240,240,240,0.14901960784313725)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1, 
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 0.6,
                 fillColor: 'rgba(202,0,32,1.0)',
                 interactive: true,
             }
@@ -197,9 +202,14 @@
             if (feature.properties['PER_Agua'] >= 0.300000 && feature.properties['PER_Agua'] <= 0.600000 ) {
                 return {
                 pane: 'pane_PercentualdeDomicilioscomgua_2',
-                stroke: false, 
+                opacity: 1,
+                color: 'rgba(240,240,240,0.14901960784313725)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 0.6,
                 fillColor: 'rgba(244,165,130,1.0)',
                 interactive: true,
             }
@@ -207,9 +217,14 @@
             if (feature.properties['PER_Agua'] >= 0.600000 && feature.properties['PER_Agua'] <= 0.700000 ) {
                 return {
                 pane: 'pane_PercentualdeDomicilioscomgua_2',
-                stroke: false, 
+                opacity: 1,
+                color: 'rgba(240,240,240,0.14901960784313725)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 0.6,
                 fillColor: 'rgba(247,247,185,1.0)',
                 interactive: true,
             }
@@ -217,9 +232,14 @@
             if (feature.properties['PER_Agua'] >= 0.700000 && feature.properties['PER_Agua'] <= 0.800000 ) {
                 return {
                 pane: 'pane_PercentualdeDomicilioscomgua_2',
-                stroke: false, 
+                opacity: 1,
+                color: 'rgba(240,240,240,0.14901960784313725)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 0.6,
                 fillColor: 'rgba(146,197,222,1.0)',
                 interactive: true,
             }
@@ -227,9 +247,14 @@
             if (feature.properties['PER_Agua'] >= 0.800000 && feature.properties['PER_Agua'] <= 1.000000 ) {
                 return {
                 pane: 'pane_PercentualdeDomicilioscomgua_2',
-                stroke: false, 
+                opacity: 1,
+                color: 'rgba(240,240,240,0.14901960784313725)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 0.6,
                 fillColor: 'rgba(5,113,176,1.0)',
                 interactive: true,
             }
@@ -281,7 +306,7 @@
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 0.6,
                 fillColor: 'rgba(255,140,0,1.0)',
                 interactive: false,
             }
@@ -332,7 +357,7 @@
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 0.6,
                 fillColor: 'rgba(255,0,51,1.0)',
                 interactive: false,
             }
@@ -382,7 +407,7 @@
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 0.6,
                 fillColor: 'rgba(0,0,255,1.0)',
                 interactive: false,
             }
@@ -432,7 +457,7 @@
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 0.6,
                 fillColor: 'rgba(255,215,0,1.0)',
                 interactive: false,
             }
@@ -482,7 +507,7 @@
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 0.6,
                 fillColor: 'rgba(80,200,120,1.0)',
                 interactive: false,
             }
@@ -532,7 +557,7 @@
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 0.6,
                 fillColor: 'rgba(128,0,128,1.0)',
                 interactive: false,
             }
@@ -604,7 +629,7 @@
             switch(String(feature.properties['Status'])) {
                 case 'Em Construção':
                     return {
-                pane: 'pane_Dessalinizadores_9' ,
+                pane: 'pane_Dessalinizadores_9',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
